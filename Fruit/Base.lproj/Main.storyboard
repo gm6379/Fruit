@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cKw-EB-o67">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fruit Detail View Controller-->
+        <scene sceneID="2S0-y7-XQ3">
+            <objects>
+                <viewController storyboardIdentifier="FruitDetailViewController" id="Sdd-Cl-NHv" customClass="FruitDetailViewController" customModule="Fruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XKf-pG-50D"/>
+                        <viewControllerLayoutGuide type="bottom" id="OCr-Zh-F37"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O80-vJ-jRo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9i-da-i9B">
+                                <rect key="frame" x="20" y="94" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfa-tq-19A">
+                                <rect key="frame" x="20" y="134.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bfa-tq-19A" secondAttribute="trailing" constant="20" id="7xH-zy-Lo0"/>
+                            <constraint firstItem="bfa-tq-19A" firstAttribute="leading" secondItem="O80-vJ-jRo" secondAttribute="leading" constant="20" id="CX0-Hl-EXU"/>
+                            <constraint firstItem="B9i-da-i9B" firstAttribute="top" secondItem="XKf-pG-50D" secondAttribute="bottom" constant="30" id="DWa-LU-PRi"/>
+                            <constraint firstAttribute="trailing" secondItem="B9i-da-i9B" secondAttribute="trailing" constant="20" id="Wvd-Yi-16I"/>
+                            <constraint firstItem="bfa-tq-19A" firstAttribute="top" secondItem="B9i-da-i9B" secondAttribute="bottom" constant="20" id="Xk9-uv-vfw"/>
+                            <constraint firstItem="B9i-da-i9B" firstAttribute="leading" secondItem="O80-vJ-jRo" secondAttribute="leading" constant="20" id="ag7-q5-cmG"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="priceLabel" destination="B9i-da-i9B" id="Eqd-Oh-hRR"/>
+                        <outlet property="weightLabel" destination="bfa-tq-19A" id="OSP-fH-82I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ypd-mi-Byc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zJR-RB-oF7">
+            <objects>
+                <navigationController id="cKw-EB-o67" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zWL-I1-k6K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oox-dS-bn3" kind="relationship" relationship="rootViewController" id="x0D-MP-weg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypN-Tp-hNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="135"/>
+        </scene>
+        <!--Fruit-->
+        <scene sceneID="f8v-Mi-JQy">
+            <objects>
+                <viewController id="oox-dS-bn3" customClass="FruitViewController" customModule="Fruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HJW-6Y-J33"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fo9-kU-39Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4r5-Qt-1oU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2OI-xS-yGR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FruitTableViewCell" id="QcV-3y-ogA">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QcV-3y-ogA" id="20P-D8-vJU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oox-dS-bn3" id="U0g-Vl-7VY"/>
+                                    <outlet property="delegate" destination="oox-dS-bn3" id="2AH-jG-tGN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2OI-xS-yGR" firstAttribute="top" secondItem="4r5-Qt-1oU" secondAttribute="top" id="FoY-80-N7z"/>
+                            <constraint firstAttribute="trailing" secondItem="2OI-xS-yGR" secondAttribute="trailing" id="GhC-cA-Erm"/>
+                            <constraint firstItem="2OI-xS-yGR" firstAttribute="leading" secondItem="4r5-Qt-1oU" secondAttribute="leading" id="bVw-M7-wCP"/>
+                            <constraint firstItem="Fo9-kU-39Y" firstAttribute="top" secondItem="2OI-xS-yGR" secondAttribute="bottom" id="y2b-D8-z0t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fruit" id="I6u-Ju-u3Z">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="QhE-MU-hxf">
+                            <connections>
+                                <action selector="loadFruitData" destination="oox-dS-bn3" id="Ca8-UX-CQE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="2OI-xS-yGR" id="ovj-xc-LCK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCm-oD-iFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189.5999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
